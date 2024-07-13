@@ -1,9 +1,9 @@
+# app/services/mta_service.py
 from nyct_gtfs import NYCTFeed
-
-API_KEY = "RU0gVzXH042AHIbqHF0jr8OBFYr3QCM99mfQRm7U"
+from config import Config
 
 def get_train_status(line_id):
-    feed = NYCTFeed(line_id, api_key=API_KEY)
+    feed = NYCTFeed(line_id, api_key=Config.API_KEY)
     trains = feed.trips
     train_status = []
 
