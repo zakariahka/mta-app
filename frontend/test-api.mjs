@@ -6,8 +6,6 @@ import fetch from "node-fetch";
     const response = await fetch("https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm", {
       headers: {
         "x-api-key": "RU0gVzXH042AHIbqHF0jr8OBFYr3QCM99mfQRm7U",
-        // replace with your GTFS-realtime source's auth token
-        // e.g. x-api-key is the header value used for NY's MTA GTFS APIs
       },
     });
     if (!response.ok) {
