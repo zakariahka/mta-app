@@ -18,7 +18,7 @@ function TrainDetails() {
   useEffect(() => {
     async function loadStopsData() {
       try {
-        const response = await fetch('http://localhost:3000/api/stops');
+        const response = await fetch('http://127.0.0.1:5000');
         if (!response.ok) {
           throw new Error(`${response.status} ${response.statusText}`);
         }
